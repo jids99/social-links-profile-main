@@ -1,0 +1,91 @@
+    @font-face {
+    font-family: Inter-Regular;
+    src: url(assets/fonts/static/Inter-Regular.ttf);
+    font-weight: 400;
+    }
+
+    @font-face {
+    font-family: Inter-SemiBold;
+    src: url(assets/fonts/static/Inter-SemiBold.ttf);
+    font-weight: 600;
+    }
+
+    @font-face {
+    font-family: Inter-Bold;
+    src: url(assets/fonts/static/Inter-Bold.ttf);
+    font-weight: 700;
+    }
+
+    :root {
+    --Green: hsl(75, 94%, 57%);
+    --LightGrey: hsl(0, 0%, 80%);
+    --Grey: hsl(0, 0%, 20%);
+    --DarkGrey: hsl(0, 0%, 12%);
+    --OffBlack: hsl(0, 0%, 8%);
+    }
+
+    html, body {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--OffBlack);
+        height: 100svh;
+    }
+
+    .card {
+        background-color: var(--DarkGrey);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 2.5rem;
+        max-width: 365px;
+        font-family: 'Inter-Regular';
+        border-radius: 1rem;
+        gap: 1rem;
+        font-size: .88em;
+    }
+
+    .avatar {
+        border-radius: 50%;
+        height: auto;
+        width: 28%;
+        align-self: center;
+        margin-bottom: 1rem;
+    }
+
+    .btn {
+        background-color: var(--Grey);
+        border-radius: 12px;
+        color: white;
+        padding: .88rem;
+        text-decoration: none;
+        font-family: 'Inter-SemiBold';
+    }
+
+    .btn:hover{
+        background-color: var(--Green);
+        color: var(--OffBlack);
+    }
+
+    .heading {
+        color:white;
+        scale: 1.8;
+    }
+
+    .subheading {
+        color: var(--Green);
+    }
+
+    .description {
+        color: var(--LightGrey);
+        padding-left: 1.6rem;
+        padding-right: 1.6rem;
+        padding-top: .8rem;
+        padding-bottom: .8rem;
+    }
